@@ -13,7 +13,7 @@ target 'TinyPlayerTests' do
 
     pod 'TinyPlayer', :path => '../'
     pod 'Quick', '~> 1.0.0'
-    pod 'Nimble', '~> 5.1.1'
+    pod 'Nimble'
 end
 
 target 'TinyPlayerBenchmark' do
