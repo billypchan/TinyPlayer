@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:TinyPlayerTableViewDemo/TinyPlayerTableViewDemo.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Demo/TinyPlayerDemo.xcodeproj">
    </FileRef>
    <FileRef

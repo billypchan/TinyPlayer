@@ -59,11 +59,11 @@ public class TinyVideoProjectionView: UIView {
             switch fillMode {
                 
             case .resizeFill:
-                playerLayer.videoGravity = AVLayerVideoGravityResize
+                playerLayer.videoGravity = AVLayerVideoGravity.resize
             case .resizeAspect:
-                playerLayer.videoGravity = AVLayerVideoGravityResizeAspect
+                playerLayer.videoGravity = AVLayerVideoGravity.resizeAspect
             case .resizeAspectFill:
-                playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+                playerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
             }
         }
     }

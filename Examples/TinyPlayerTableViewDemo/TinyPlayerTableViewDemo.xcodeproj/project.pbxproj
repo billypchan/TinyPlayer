@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		253F5594BB9D5F2C42229A92 /* Pods_TinyPlayerTableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CFF069E73B3ED423FD0236 /* Pods_TinyPlayerTableViewDemo.framework */; };
+		FEC62E8F1F99217C0035070C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC62E8E1F99217C0035070C /* AppDelegate.swift */; };
+		FEC62E911F99217C0035070C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC62E901F99217C0035070C /* ViewController.swift */; };
+		FEC62E941F99217C0035070C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC62E921F99217C0035070C /* Main.storyboard */; };
+		FEC62E961F99217C0035070C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC62E951F99217C0035070C /* Assets.xcassets */; };
+		FEC62E991F99217C0035070C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC62E971F99217C0035070C /* LaunchScreen.storyboard */; };
+		FEC62EA41F99217D0035070C /* TinyPlayerTableViewDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC62EA31F99217D0035070C /* TinyPlayerTableViewDemoTests.swift */; };
+		FEC62EAF1F99217D0035070C /* TinyPlayerTableViewDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC62EAE1F99217D0035070C /* TinyPlayerTableViewDemoUITests.swift */; };
+		FEC62EBD1F9957880035070C /* VideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC62EBC1F9957880035070C /* VideoCell.swift */; };
+		FEC62EC11F995D980035070C /* VideoPlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC62EC01F995D970035070C /* VideoPlayerViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FEC62EA01F99217D0035070C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEC62E831F99217C0035070C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEC62E8A1F99217C0035070C;
+			remoteInfo = TinyPlayerTableViewDemo;
+		};
+		FEC62EAB1F99217D0035070C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FEC62E831F99217C0035070C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEC62E8A1F99217C0035070C;
+			remoteInfo = TinyPlayerTableViewDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17CFF069E73B3ED423FD0236 /* Pods_TinyPlayerTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyPlayerTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1834BA88CB906F75E377B8BA /* Pods-TinyPlayerTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyPlayerTableViewDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TinyPlayerTableViewDemo/Pods-TinyPlayerTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7A5EDE1AEE53D4640C131675 /* Pods-TinyPlayerTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyPlayerTableViewDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TinyPlayerTableViewDemo/Pods-TinyPlayerTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FEC62E8B1F99217C0035070C /* TinyPlayerTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyPlayerTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC62E8E1F99217C0035070C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FEC62E901F99217C0035070C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FEC62E931F99217C0035070C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FEC62E951F99217C0035070C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FEC62E981F99217C0035070C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FEC62E9A1F99217C0035070C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC62E9F1F99217D0035070C /* TinyPlayerTableViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyPlayerTableViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC62EA31F99217D0035070C /* TinyPlayerTableViewDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyPlayerTableViewDemoTests.swift; sourceTree = "<group>"; };
+		FEC62EA51F99217D0035070C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC62EAA1F99217D0035070C /* TinyPlayerTableViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinyPlayerTableViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEC62EAE1F99217D0035070C /* TinyPlayerTableViewDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyPlayerTableViewDemoUITests.swift; sourceTree = "<group>"; };
+		FEC62EB01F99217D0035070C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC62EBC1F9957880035070C /* VideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCell.swift; sourceTree = "<group>"; };
+		FEC62EC01F995D970035070C /* VideoPlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoPlayerViewModel.swift; path = ../../Demo/TinyPlayerDemo/VideoPlayerViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEC62E881F99217C0035070C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				253F5594BB9D5F2C42229A92 /* Pods_TinyPlayerTableViewDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC62E9C1F99217D0035070C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC62EA71F99217D0035070C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		90345BCE09D2FF282F56BBC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A5EDE1AEE53D4640C131675 /* Pods-TinyPlayerTableViewDemo.debug.xcconfig */,
+				1834BA88CB906F75E377B8BA /* Pods-TinyPlayerTableViewDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B3105285172024CD24E76251 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17CFF069E73B3ED423FD0236 /* Pods_TinyPlayerTableViewDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEC62E821F99217C0035070C = {
+			isa = PBXGroup;
+			children = (
+				FEC62E8D1F99217C0035070C /* TinyPlayerTableViewDemo */,
+				FEC62EA21F99217D0035070C /* TinyPlayerTableViewDemoTests */,
+				FEC62EAD1F99217D0035070C /* TinyPlayerTableViewDemoUITests */,
+				FEC62E8C1F99217C0035070C /* Products */,
+				90345BCE09D2FF282F56BBC5 /* Pods */,
+				B3105285172024CD24E76251 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FEC62E8C1F99217C0035070C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEC62E8B1F99217C0035070C /* TinyPlayerTableViewDemo.app */,
+				FEC62E9F1F99217D0035070C /* TinyPlayerTableViewDemoTests.xctest */,
+				FEC62EAA1F99217D0035070C /* TinyPlayerTableViewDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEC62E8D1F99217C0035070C /* TinyPlayerTableViewDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FEC62EC01F995D970035070C /* VideoPlayerViewModel.swift */,
+				FEC62E8E1F99217C0035070C /* AppDelegate.swift */,
+				FEC62E901F99217C0035070C /* ViewController.swift */,
+				FEC62E921F99217C0035070C /* Main.storyboard */,
+				FEC62E951F99217C0035070C /* Assets.xcassets */,
+				FEC62E971F99217C0035070C /* LaunchScreen.storyboard */,
+				FEC62E9A1F99217C0035070C /* Info.plist */,
+				FEC62EBC1F9957880035070C /* VideoCell.swift */,
+			);
+			path = TinyPlayerTableViewDemo;
+			sourceTree = "<group>";
+		};
+		FEC62EA21F99217D0035070C /* TinyPlayerTableViewDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FEC62EA31F99217D0035070C /* TinyPlayerTableViewDemoTests.swift */,
+				FEC62EA51F99217D0035070C /* Info.plist */,
+			);
+			path = TinyPlayerTableViewDemoTests;
+			sourceTree = "<group>";
+		};
+		FEC62EAD1F99217D0035070C /* TinyPlayerTableViewDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FEC62EAE1F99217D0035070C /* TinyPlayerTableViewDemoUITests.swift */,
+				FEC62EB01F99217D0035070C /* Info.plist */,
+			);
+			path = TinyPlayerTableViewDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEC62E8A1F99217C0035070C /* TinyPlayerTableViewDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC62EB31F99217D0035070C /* Build configuration list for PBXNativeTarget "TinyPlayerTableViewDemo" */;
+			buildPhases = (
+				669F9C3F94BA89ECD6B39BEC /* [CP] Check Pods Manifest.lock */,
+				FEC62E871F99217C0035070C /* Sources */,
+				FEC62E881F99217C0035070C /* Frameworks */,
+				FEC62E891F99217C0035070C /* Resources */,
+				59A8B040F1FAD4FC78C86EFF /* [CP] Embed Pods Frameworks */,
+				BADA8DCA3A0910170976D043 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinyPlayerTableViewDemo;
+			productName = TinyPlayerTableViewDemo;
+			productReference = FEC62E8B1F99217C0035070C /* TinyPlayerTableViewDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FEC62E9E1F99217D0035070C /* TinyPlayerTableViewDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC62EB61F99217D0035070C /* Build configuration list for PBXNativeTarget "TinyPlayerTableViewDemoTests" */;
+			buildPhases = (
+				FEC62E9B1F99217D0035070C /* Sources */,
+				FEC62E9C1F99217D0035070C /* Frameworks */,
+				FEC62E9D1F99217D0035070C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEC62EA11F99217D0035070C /* PBXTargetDependency */,
+			);
+			name = TinyPlayerTableViewDemoTests;
+			productName = TinyPlayerTableViewDemoTests;
+			productReference = FEC62E9F1F99217D0035070C /* TinyPlayerTableViewDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FEC62EA91F99217D0035070C /* TinyPlayerTableViewDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEC62EB91F99217D0035070C /* Build configuration list for PBXNativeTarget "TinyPlayerTableViewDemoUITests" */;
+			buildPhases = (
+				FEC62EA61F99217D0035070C /* Sources */,
+				FEC62EA71F99217D0035070C /* Frameworks */,
+				FEC62EA81F99217D0035070C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEC62EAC1F99217D0035070C /* PBXTargetDependency */,
+			);
+			name = TinyPlayerTableViewDemoUITests;
+			productName = TinyPlayerTableViewDemoUITests;
+			productReference = FEC62EAA1F99217D0035070C /* TinyPlayerTableViewDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEC62E831F99217C0035070C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "chan bill";
+				TargetAttributes = {
+					FEC62E8A1F99217C0035070C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					FEC62E9E1F99217D0035070C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FEC62E8A1F99217C0035070C;
+					};
+					FEC62EA91F99217D0035070C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FEC62E8A1F99217C0035070C;
+					};
+				};
+			};
+			buildConfigurationList = FEC62E861F99217C0035070C /* Build configuration list for PBXProject "TinyPlayerTableViewDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FEC62E821F99217C0035070C;
+			productRefGroup = FEC62E8C1F99217C0035070C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEC62E8A1F99217C0035070C /* TinyPlayerTableViewDemo */,
+				FEC62E9E1F99217D0035070C /* TinyPlayerTableViewDemoTests */,
+				FEC62EA91F99217D0035070C /* TinyPlayerTableViewDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FEC62E891F99217C0035070C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC62E991F99217C0035070C /* LaunchScreen.storyboard in Resources */,
+				FEC62E961F99217C0035070C /* Assets.xcassets in Resources */,
+				FEC62E941F99217C0035070C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC62E9D1F99217D0035070C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC62EA81F99217D0035070C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59A8B040F1FAD4FC78C86EFF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/../Pods/Target Support Files/Pods-TinyPlayerTableViewDemo/Pods-TinyPlayerTableViewDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TinyPlayer-iOS11.0/TinyPlayer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyPlayer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TinyPlayerTableViewDemo/Pods-TinyPlayerTableViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		669F9C3F94BA89ECD6B39BEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinyPlayerTableViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BADA8DCA3A0910170976D043 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-TinyPlayerTableViewDemo/Pods-TinyPlayerTableViewDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEC62E871F99217C0035070C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC62E911F99217C0035070C /* ViewController.swift in Sources */,
+				FEC62EC11F995D980035070C /* VideoPlayerViewModel.swift in Sources */,
+				FEC62E8F1F99217C0035070C /* AppDelegate.swift in Sources */,
+				FEC62EBD1F9957880035070C /* VideoCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC62E9B1F99217D0035070C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC62EA41F99217D0035070C /* TinyPlayerTableViewDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEC62EA61F99217D0035070C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEC62EAF1F99217D0035070C /* TinyPlayerTableViewDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FEC62EA11F99217D0035070C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEC62E8A1F99217C0035070C /* TinyPlayerTableViewDemo */;
+			targetProxy = FEC62EA01F99217D0035070C /* PBXContainerItemProxy */;
+		};
+		FEC62EAC1F99217D0035070C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEC62E8A1F99217C0035070C /* TinyPlayerTableViewDemo */;
+			targetProxy = FEC62EAB1F99217D0035070C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FEC62E921F99217C0035070C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEC62E931F99217C0035070C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FEC62E971F99217C0035070C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FEC62E981F99217C0035070C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FEC62EB11F99217D0035070C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FEC62EB21F99217D0035070C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEC62EB41F99217D0035070C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A5EDE1AEE53D4640C131675 /* Pods-TinyPlayerTableViewDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5GZ5MPEHS;
+				INFOPLIST_FILE = TinyPlayerTableViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.billchan.TinyPlayerTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FEC62EB51F99217D0035070C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1834BA88CB906F75E377B8BA /* Pods-TinyPlayerTableViewDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5GZ5MPEHS;
+				INFOPLIST_FILE = TinyPlayerTableViewDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.billchan.TinyPlayerTableViewDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FEC62EB71F99217D0035070C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5GZ5MPEHS;
+				INFOPLIST_FILE = TinyPlayerTableViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.billchan.TinyPlayerTableViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinyPlayerTableViewDemo.app/TinyPlayerTableViewDemo";
+			};
+			name = Debug;
+		};
+		FEC62EB81F99217D0035070C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5GZ5MPEHS;
+				INFOPLIST_FILE = TinyPlayerTableViewDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.billchan.TinyPlayerTableViewDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinyPlayerTableViewDemo.app/TinyPlayerTableViewDemo";
+			};
+			name = Release;
+		};
+		FEC62EBA1F99217D0035070C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5GZ5MPEHS;
+				INFOPLIST_FILE = TinyPlayerTableViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.billchan.TinyPlayerTableViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TinyPlayerTableViewDemo;
+			};
+			name = Debug;
+		};
+		FEC62EBB1F99217D0035070C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G5GZ5MPEHS;
+				INFOPLIST_FILE = TinyPlayerTableViewDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.billchan.TinyPlayerTableViewDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TinyPlayerTableViewDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEC62E861F99217C0035070C /* Build configuration list for PBXProject "TinyPlayerTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC62EB11F99217D0035070C /* Debug */,
+				FEC62EB21F99217D0035070C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC62EB31F99217D0035070C /* Build configuration list for PBXNativeTarget "TinyPlayerTableViewDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC62EB41F99217D0035070C /* Debug */,
+				FEC62EB51F99217D0035070C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC62EB61F99217D0035070C /* Build configuration list for PBXNativeTarget "TinyPlayerTableViewDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC62EB71F99217D0035070C /* Debug */,
+				FEC62EB81F99217D0035070C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEC62EB91F99217D0035070C /* Build configuration list for PBXNativeTarget "TinyPlayerTableViewDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEC62EBA1F99217D0035070C /* Debug */,
+				FEC62EBB1F99217D0035070C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEC62E831F99217C0035070C /* Project object */;
+}

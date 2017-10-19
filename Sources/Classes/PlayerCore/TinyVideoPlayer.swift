@@ -738,7 +738,7 @@ public class TinyVideoPlayer: NSObject, TinyVideoPlayerProtocol, TinyLogging {
      */
     private var currentVideoPlaybackEnded: Bool = false
     
-    internal func playerItemDidPlayToEndTime(_ notification: Notification? = nil) {
+    @objc internal func playerItemDidPlayToEndTime(_ notification: Notification? = nil) {
         
         guard !currentVideoPlaybackEnded else {
             return
@@ -756,7 +756,7 @@ public class TinyVideoPlayer: NSObject, TinyVideoPlayerProtocol, TinyLogging {
         delegate?.playerHasFinishedPlayingVideo(self)
     }
 
-    internal func playerItemPlaybackStalled(_ notification: Notification) {
+    @objc internal func playerItemPlaybackStalled(_ notification: Notification) {
         
         updatePlaybackState(.waiting)
     }
@@ -1038,7 +1038,7 @@ public extension TinyVideoPlayer {
             if let metatDataItems = playerItem?.asset.commonMetadata {
                 
                 if let titleItem = (metatDataItems.filter {
-                        $0.commonKey == AVMetadataCommonKeyTitle
+                    $0.commonKey == AVMetadataKey.commonKeyTitle
                     }.first) {
                     
                     infoDict[MPMediaItemPropertyTitle] = titleItem.stringValue

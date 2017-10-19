@@ -22,3 +22,10 @@ target 'TinyPlayerBenchmark' do
 
     pod 'TinyPlayer', :path => '../'
 end
+
+target 'TinyPlayerTableViewDemo' do
+    workspace 'TinyPlayerDemo+Benchmark'
+    project 'TinyPlayerTableViewDemo/TinyPlayerTableViewDemo.xcodeproj'
+    
+    pod 'TinyPlayer', :path => '../'
+end
