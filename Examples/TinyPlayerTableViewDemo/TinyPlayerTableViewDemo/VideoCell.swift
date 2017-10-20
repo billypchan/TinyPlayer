@@ -37,16 +37,27 @@ class VideoCell: UITableViewCell {
         projectionView.rightAnchor
             .constraint(equalTo: self.contentView.rightAnchor, constant: 0.0).isActive = true
 
-        viewModel.tinyPlayer.play()
+//        viewModel.tinyPlayer.play()
     }
 
+    func togglePlay() {
+        if viewModel.tinyPlayer.playbackState == .playing {
+            viewModel.tinyPlayer.pause()
+        }
+        else {
+            viewModel.tinyPlayer.play()
+        }
+    }
+    
 //    override func setSelected(_ selected: Bool, animated: Bool) {
 //        super.setSelected(selected, animated: animated)
+//
 //
 //        // Configure the view for the selected state
 //    }
 
     deinit {
+        viewModel = nil
         print("VideoCell is dealloced.")
     }
 

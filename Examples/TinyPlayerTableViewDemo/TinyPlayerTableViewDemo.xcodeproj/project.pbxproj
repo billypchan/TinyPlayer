@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		253F5594BB9D5F2C42229A92 /* Pods_TinyPlayerTableViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17CFF069E73B3ED423FD0236 /* Pods_TinyPlayerTableViewDemo.framework */; };
+		FEAB61F41F9A861700B9A8AB /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEAB61F31F9A861700B9A8AB /* VideoTableViewController.swift */; };
 		FEC62E8F1F99217C0035070C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC62E8E1F99217C0035070C /* AppDelegate.swift */; };
-		FEC62E911F99217C0035070C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC62E901F99217C0035070C /* ViewController.swift */; };
 		FEC62E941F99217C0035070C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC62E921F99217C0035070C /* Main.storyboard */; };
 		FEC62E961F99217C0035070C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC62E951F99217C0035070C /* Assets.xcassets */; };
 		FEC62E991F99217C0035070C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEC62E971F99217C0035070C /* LaunchScreen.storyboard */; };
@@ -40,9 +40,9 @@
 		17CFF069E73B3ED423FD0236 /* Pods_TinyPlayerTableViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinyPlayerTableViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1834BA88CB906F75E377B8BA /* Pods-TinyPlayerTableViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyPlayerTableViewDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-TinyPlayerTableViewDemo/Pods-TinyPlayerTableViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7A5EDE1AEE53D4640C131675 /* Pods-TinyPlayerTableViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinyPlayerTableViewDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-TinyPlayerTableViewDemo/Pods-TinyPlayerTableViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		FEAB61F31F9A861700B9A8AB /* VideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
 		FEC62E8B1F99217C0035070C /* TinyPlayerTableViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinyPlayerTableViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC62E8E1F99217C0035070C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEC62E901F99217C0035070C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FEC62E931F99217C0035070C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEC62E951F99217C0035070C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEC62E981F99217C0035070C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -127,12 +127,12 @@
 			children = (
 				FEC62EC01F995D970035070C /* VideoPlayerViewModel.swift */,
 				FEC62E8E1F99217C0035070C /* AppDelegate.swift */,
-				FEC62E901F99217C0035070C /* ViewController.swift */,
 				FEC62E921F99217C0035070C /* Main.storyboard */,
 				FEC62E951F99217C0035070C /* Assets.xcassets */,
 				FEC62E971F99217C0035070C /* LaunchScreen.storyboard */,
 				FEC62E9A1F99217C0035070C /* Info.plist */,
 				FEC62EBC1F9957880035070C /* VideoCell.swift */,
+				FEAB61F31F9A861700B9A8AB /* VideoTableViewController.swift */,
 			);
 			path = TinyPlayerTableViewDemo;
 			sourceTree = "<group>";
@@ -346,8 +346,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEC62E911F99217C0035070C /* ViewController.swift in Sources */,
 				FEC62EC11F995D980035070C /* VideoPlayerViewModel.swift in Sources */,
+				FEAB61F41F9A861700B9A8AB /* VideoTableViewController.swift in Sources */,
 				FEC62E8F1F99217C0035070C /* AppDelegate.swift in Sources */,
 				FEC62EBD1F9957880035070C /* VideoCell.swift in Sources */,
 			);

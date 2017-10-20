@@ -8,44 +8,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Video Table View Controller-->
         <scene sceneID="aFX-qQ-dck">
             <objects>
-                <tableViewController id="XtS-6P-LrR" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NiW-y7-cWC">
+                <tableViewController id="XtS-6P-LrR" customClass="VideoTableViewController" customModule="TinyPlayerTableViewDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="210" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="NiW-y7-cWC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <sections>
-                            <tableViewSection id="qhV-nM-Aad">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCell" rowHeight="210" id="gLa-9T-ab0" customClass="VideoCell" customModule="TinyPlayerTableViewDemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gLa-9T-ab0" id="zX5-Rm-bGR">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCell" rowHeight="210" id="mlL-AT-alv" customClass="VideoCell" customModule="TinyPlayerTableViewDemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="210" width="375" height="210"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mlL-AT-alv" id="0nA-ui-0rb">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCell" rowHeight="210" id="aBB-98-Iyl" customClass="VideoCell" customModule="TinyPlayerTableViewDemo" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="420" width="375" height="210"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aBB-98-Iyl" id="Erc-L5-Ul0">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
-                        </sections>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="videoCell" rowHeight="210" id="gLa-9T-ab0" customClass="VideoCell" customModule="TinyPlayerTableViewDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="210"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gLa-9T-ab0" id="zX5-Rm-bGR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="209.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <sections/>
                         <connections>
                             <outlet property="dataSource" destination="XtS-6P-LrR" id="7rw-j7-Q71"/>
                             <outlet property="delegate" destination="XtS-6P-LrR" id="0lS-97-zey"/>

@@ -236,6 +236,8 @@ public class TinyVideoPlayer: NSObject, TinyVideoPlayerProtocol, TinyLogging {
         player.replaceCurrentItem(with: nil)
 
         detachObserversFrom(player: player)
+
+        print("player is dealloced.")
     }
 
     // - MARK: Media Resource Management

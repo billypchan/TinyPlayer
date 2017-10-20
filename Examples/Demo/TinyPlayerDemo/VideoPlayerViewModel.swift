@@ -26,6 +26,13 @@ fileprivate let testHLSVideoUrl4 = "http://qthttp.apple.com.edgesuite.net/1010qw
 
 fileprivate let testLocalVideo = Bundle.main.path(forResource: "unittest_video", ofType: "mp4")
 
+func randomURL() -> String {
+    let array = [testVideoUrl, testHLSVideoUrl, testHLSVideoUrl2, testHLSVideoUrl3, testHLSVideoUrl4]
+    let randomIndex = Int(arc4random_uniform(UInt32(array.count)))
+    
+    return array[randomIndex]
+}
+
 class VideoPlayerViewModel: TinyLogging {
     
     /* Required property from the TinyLogging protocol. */
@@ -47,7 +54,7 @@ class VideoPlayerViewModel: TinyLogging {
             return
         }
         
-        guard let url = URL(string: testVideoUrl) else {
+        guard let url = URL(string: randomURL()) else {
             tinyPlayer = TinyVideoPlayer()
             return
         }
@@ -61,6 +68,11 @@ class VideoPlayerViewModel: TinyLogging {
         tinyPlayer = TinyVideoPlayer(resourceUrl: url, mediaContext: mediaContext)
         
         tinyPlayer.delegate = self
+    }
+    
+    deinit {
+        tinyPlayer.closeCurrentItem()
+        print("ViewModel is dealloced.")
     }
 }
 
@@ -108,7 +120,7 @@ extension VideoPlayerViewModel: TinyPlayerDelegate {
 }
 
 // MARK: - Process commands from RootViewModel
-
+/*
 extension VideoPlayerViewModel: RootViewModelCommandReceiver {
     
     func playButtonTapped() {
@@ -140,7 +152,7 @@ extension VideoPlayerViewModel: RootViewModelCommandReceiver {
         tinyPlayer.closeCurrentItem()
     }
 }
-
+*/
 
 /**
     This protocol defines the callbacks from a viewModel observer. 
